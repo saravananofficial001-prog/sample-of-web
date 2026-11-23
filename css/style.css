@@ -1,0 +1,234 @@
+/* THANGAM AGENCY - BLACK & GOLD THEME */
+:root{--black:#080808;--panel:#181818;--gold:#d5a63d;--gold-light:#e0b44f;--white:#fff;--muted:#bdbdbd;--line:#3a3020}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--black);color:var(--white);line-height:1.6}
+a{color:inherit}
+.site-header{min-height:86px;padding:16px 7%;display:flex;align-items:center;justify-content:space-between;gap:24px;background:#050505;border-bottom:1px solid var(--gold);position:relative;z-index:5}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.1}
+.brand-main{font-weight:800;letter-spacing:1.5px;color:var(--gold);font-size:25px}
+.brand-sub{font-size:11px;letter-spacing:6px;color:#fff;margin-top:5px}
+.main-nav{display:flex;align-items:center;gap:21px;flex-wrap:wrap}
+.main-nav a{text-decoration:none;font-size:14px;color:#eee;transition:.25s}
+.main-nav a:hover,.main-nav a.active{color:var(--gold)}
+.language-toggle,.menu-toggle{border:1px solid var(--gold);background:transparent;color:var(--gold);padding:8px 12px;border-radius:4px;cursor:pointer}
+.menu-toggle{display:none;font-size:20px}
+.hero{min-height:590px;display:flex;align-items:center;padding:80px 10%;background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.58)),url('../images/home-banner.jpg') center/cover no-repeat}
+.hero-content{max-width:720px}
+.eyebrow{color:var(--gold);font-size:13px;letter-spacing:3px;font-weight:700;margin-bottom:15px}
+.hero h1{font-size:clamp(38px,5vw,64px);line-height:1.15;margin-bottom:22px}
+.hero h1 span,.section-heading h2 span,.about-copy h2 span,.contact-info h2 span,.enquiry-form h2 span{color:var(--gold)}
+.hero-description{font-size:17px;color:#d0d0d0;max-width:600px;margin-bottom:30px}
+.button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:0;border-radius:4px;padding:13px 25px;font-weight:700;cursor:pointer;transition:.25s}
+.button-gold{background:var(--gold);color:#080808}
+.button-gold:hover{background:#fff;transform:translateY(-2px)}
+.section{padding:82px 7%}
+.section-heading{text-align:center;margin-bottom:46px}
+.section-heading h2{font-size:clamp(29px,4vw,40px);line-height:1.2}
+.section-intro{color:var(--muted);margin:15px auto 0;max-width:650px}
+.category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
+.category-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:40px 24px;text-align:center;transition:all .35s ease;min-height:275px}
+.category-image{height:60px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.category-image img{width:100px;height:100px;object-fit:contain;display:block}
+.category-card h3{color:var(--gold-light);font-size:21px;margin-bottom:13px}
+.category-card p{color:#c8c8c8;margin-bottom:22px}
+.category-card>a,.text-link{color:var(--gold);text-decoration:none;font-weight:700}
+.category-card:hover{background:var(--gold);border-color:var(--gold);transform:translateY(-7px)}
+.category-card:hover h3,.category-card:hover p,.category-card:hover>a{color:#080808}
+.why-us{background:#0d0d0d}
+.benefit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.benefit-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:30px 18px;text-align:center;transition:.35s}
+.number{width:48px;height:48px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;color:var(--gold);font-weight:700}
+.benefit-card h3{color:var(--gold-light);font-size:17px;margin-bottom:10px}
+.benefit-card p{font-size:14px;color:var(--muted)}
+.benefit-card:hover{background:var(--gold);border-color:var(--gold);transform:translateY(-6px)}
+.benefit-card:hover .number,.benefit-card:hover h3,.benefit-card:hover p{color:#080808;border-color:#080808}
+.cta-strip{padding:42px 7%;background:#17130b;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.cta-strip h2{font-size:25px}
+.page-banner{text-align:center;padding:75px 7% 65px;background:linear-gradient(135deg,#15110a,#080808);border-bottom:1px solid var(--line)}
+.page-banner h1{font-size:clamp(32px,4vw,48px);margin-bottom:10px}
+.page-banner>p:last-child{color:var(--muted)}
+.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.product-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;padding-bottom:23px;transition:.3s}
+.product-card:hover{border-color:var(--gold);transform:translateY(-5px)}
+.product-card img{width:100%;height:190px;object-fit:cover;background:#222;display:block}
+.product-card h3{color:var(--gold-light);font-size:20px;padding:18px 20px 4px}
+.product-card p{color:var(--muted);padding:0 20px 15px}
+.product-card .text-link{display:inline-block;margin:0 20px}
+.brand-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.brand-card{background:#fff;border:1px solid var(--line);border-radius:8px;min-height:155px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
+.brand-card img{width:125px;height:70px;object-fit:contain}
+.brand-card h3{color:#111;font-size:16px}
+.about-layout,.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about-copy h2,.contact-info h2{font-size:clamp(30px,4vw,42px);line-height:1.2;margin-bottom:22px}
+.about-copy p:not(.eyebrow){color:var(--muted);margin-bottom:18px}
+.about-copy .button{margin-top:10px}
+.about-image img{width:100%;min-height:300px;max-height:420px;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:#1b1b1b}
+.info-item{margin:22px 0}
+.info-item h3{color:var(--gold-light);font-size:17px;margin-bottom:4px}
+.info-item p,.info-item a{color:var(--muted);text-decoration:none}
+.enquiry-form{background:var(--panel);border:1px solid var(--line);padding:30px;border-radius:8px}
+.enquiry-form h2{font-size:27px;margin-bottom:20px}
+.enquiry-form label{display:block;color:#ddd;margin:14px 0 6px}
+.enquiry-form input,.enquiry-form textarea{width:100%;padding:13px;border:1px solid #51452f;border-radius:4px;background:#0d0d0d;color:#fff;font:inherit;outline:none}
+.enquiry-form input:focus,.enquiry-form textarea:focus{border-color:var(--gold)}
+.enquiry-form button{margin-top:18px}
+.form-note{font-size:12px;color:#aaa;margin-top:12px}
+.site-footer{padding:40px 7% 20px;background:#050505;border-top:1px solid var(--gold);display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.footer-brand{margin-bottom:14px;width:max-content}
+.site-footer p,.site-footer a{color:var(--muted);font-size:14px}
+.footer-contact{text-align:right}
+.footer-contact a{color:var(--gold)}
+.copyright{grid-column:1/-1;text-align:center;border-top:1px solid #292929;padding-top:18px;margin-top:10px}
+@media(max-width:1000px){.main-nav{gap:13px}.main-nav a{font-size:13px}.benefit-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.site-header{padding:15px 5%;flex-wrap:wrap}.menu-toggle{display:block}.main-nav{display:none;width:100%;flex-direction:column;align-items:flex-start;padding:12px 0 5px}.main-nav.open{display:flex}.main-nav a{font-size:15px;padding:3px 0}.hero{min-height:500px;padding:65px 7%}.category-grid,.product-grid{grid-template-columns:1fr 1fr}.brand-grid{grid-template-columns:repeat(3,1fr)}.about-layout,.contact-layout{grid-template-columns:1fr;gap:30px}.cta-strip{align-items:flex-start;flex-direction:column}.site-footer{grid-template-columns:1fr}.footer-contact{text-align:left}.copyright{grid-column:1}}
+@media(max-width:520px){.category-grid,.product-grid,.benefit-grid{grid-template-columns:1fr}.brand-grid{grid-template-columns:repeat(2,1fr)}.section{padding:60px 6%}.category-card{min-height:250px}.hero h1{font-size:39px}.hero-description{font-size:15px}.page-banner{padding:55px 6%}.enquiry-form{padding:22px}}
+
+
+/* MOBILE FULL-SCREEN BLACK & GOLD MENU */
+.close-menu{display:none}
+@media(max-width:760px){
+  .main-nav{
+    display:flex; position:fixed; inset:0; z-index:30; width:100%; height:100vh; height:100dvh;
+    overflow-y:auto; background:#080808; border-left:1px solid var(--gold);
+    flex-direction:column; align-items:center; justify-content:center; gap:18px;
+    padding:76px 22px 30px; opacity:0; visibility:hidden; pointer-events:none;
+    transform:translateY(-10px); transition:opacity .25s ease,transform .25s ease,visibility .25s ease;
+  }
+  .main-nav.open{display:flex; opacity:1; visibility:visible; pointer-events:auto; transform:translateY(0)}
+  .main-nav .close-menu{
+    display:flex; position:absolute; top:24px; right:6%; align-items:center; gap:12px;
+    padding:9px 0; border:0; background:transparent; color:var(--gold);
+    font-size:13px; font-weight:700; letter-spacing:2px; cursor:pointer;
+  }
+  .main-nav .close-menu span{font-size:28px; line-height:1; font-weight:400}
+  .main-nav a{
+    display:block; padding:3px 0; color:#fff; font-size:clamp(25px,7vw,34px);
+    line-height:1.25; font-weight:800; letter-spacing:.3px; text-align:center;
+    transition:color .2s ease,transform .2s ease;
+  }
+  .main-nav a:hover,.main-nav a.active{color:var(--gold); transform:scale(1.04)}
+  .main-nav .language-toggle{margin-top:12px}
+  body.menu-is-open{overflow:hidden}
+}
+
+/* HOME BANNER BACKGROUND IMAGE */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.98) 0%,
+            rgba(0, 0, 0, 0.90) 40%,
+            rgba(0, 0, 0, 0.20) 100%
+        ),
+        url("Thangam Agency Luxury Home Showcase.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+/* MOBILE */
+@media (max-width: 760px) {
+    .hero {
+        min-height: 500px;
+        background-position: 65% center;
+    }
+}
+
+/* HOME BANNER IMAGE */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.96) 0%,
+            rgba(0,0,0,0.80) 40%,
+            rgba(0,0,0,0.15) 100%
+        ),
+        url("../images/Thangam Agency Luxury Home Showcase.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+}
+
+@media (max-width: 760px) {
+    .hero {
+        min-height: 500px;
+        background-position: 65% center;
+    }
+}
+
+.hero {
+    position: relative;
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    overflow: hidden;
+    background: #080808;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0,0,0,.97),
+        rgba(0,0,0,.75) 45%,
+        rgba(0,0,0,.10)
+    );
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+}
+
+@media(max-width:760px) {
+    .hero {
+        min-height: 500px;
+        padding: 65px 7%;
+    }
+}
+
